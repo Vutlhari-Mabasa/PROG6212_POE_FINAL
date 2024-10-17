@@ -49,7 +49,7 @@ namespace PROG6212_Part1.Controllers
             // Generate a new claim ID
             int newClaimId = claims.Count + 1;
 
-            // Define the storage path (you can customize this path)
+            // Define the storage path 
             string uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
             if (!Directory.Exists(uploadFolder))
             {
