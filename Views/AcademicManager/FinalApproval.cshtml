@@ -1,0 +1,62 @@
+﻿<style>
+    h2 {
+        background-color: #f0f8ff; /* Light blue background */
+        color: #333; /* Dark grey font color */
+        font-family: 'Arial', sans-serif; /* Font family */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    table {
+        background-color: forestgreen; 
+        font-family: 'Verdana', sans-serif; /* Font for table content */
+        color: #000; /* Black font color */
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd; /* Border around table cells */
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #4CAF50; /* Green background for table headers */
+        color: white; /* White font for headers */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light grey background for even rows */
+    }
+
+    .btn {
+        font-family: 'Verdana', sans-serif;
+    }
+</style>
+
+<h2>Final Approval</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Lecturer</th>
+            <th>Hours Worked</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2</td>
+            <td>Jane Doe</td>
+            <td>10</td>
+            <td>Coordinator Approved</td>
+            <td>
+                <button class="btn btn-success" enable>Approve</button>
+                <button class="btn btn-danger" enable>Reject</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

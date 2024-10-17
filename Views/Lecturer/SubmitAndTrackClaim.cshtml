@@ -1,0 +1,121 @@
+﻿@model List<PROG6212_Part1.Models.Claim>
+
+<style>
+    /* Styling for the heading (h2) */
+    h2 {
+        background-color: #d3e5ff; /* Light blue background */
+        color: #222; /* Darker grey font color */
+        font-family: 'Arial', sans-serif; /* Font family for h2 */
+        padding: 15px; /* Padding inside the heading */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    /* Styling for the subheading (h3) */
+    h3 {
+        color: #333; /* Dark grey font for h3 */
+        font-family: 'Verdana', sans-serif; /* Font family for h3 */
+    }
+
+    /* Styling for the form sections (submit and track claims) */
+    .submit-claim, .track-claims {
+        background-color: #f9f9f9; /* Light grey background */
+        padding: 20px; /* Padding around the form section */
+        border-radius: 10px; /* Rounded corners for form sections */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for form section */
+        margin-bottom: 20px; /* Space below each section */
+    }
+
+    /* Styling for form labels */
+    label {
+        font-family: 'Verdana', sans-serif; /* Font for form labels */
+        color: #555; /* Medium grey color for labels */
+    }
+
+    /* Styling for input fields and textareas */
+    input.form-control, textarea.form-control {
+        font-family: 'Verdana', sans-serif; /* Font for inputs and textarea */
+        color: #333; /* Input text color */
+    }
+
+    /* Styling for the submit button */
+    button {
+        font-family: 'Verdana', sans-serif; /* Font for buttons */
+        background-color: #007bff; /* Blue button background */
+        color: #fff; /* White text */
+    }
+
+    /* Styling for the table */
+    table {
+        width: 100%; /* Full width table */
+        background-color: cadetblue; /* Table background color */
+        font-family: 'Verdana', sans-serif; /* Font for table content */
+        color: #000; /* Black font color */
+        border-collapse: collapse; /* Collapsed borders */
+    }
+
+    /* Styling for table headers and cells */
+    th, td {
+        border: 1px solid #ddd; /* Border around table cells */
+        padding: 10px; /* Padding inside each cell */
+        text-align: left; /* Left-align text */
+    }
+
+    /* Styling for table headers */
+    th {
+        background-color: #4CAF50; /* Green background for table headers */
+        color: white; /* White font for headers */
+    }
+
+    /* Styling for even table rows */
+    tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light grey background for even rows */
+    }
+</style>
+
+<h2>Submit a Claim</h2>
+<form asp-action="SubmitClaim" method="post" enctype="multipart/form-data">
+    <div>
+        <label>Lecturer Name:</label>
+        <input type="text" name="lecturer" required />
+    </div>
+    <div>
+        <label>Hours Worked:</label>
+        <input type="number" name="hoursWorked" required />
+    </div>
+    <div>
+        <label>Hourly Rate:</label>
+        <input type="number" name="hourlyRate" required />
+    </div>
+    <div>
+        <label>Notes (optional):</label>
+        <textarea name="notes"></textarea>
+    </div>
+    <div>
+        <label>Upload Document:</label>
+        <input type="file" name="document" required />
+    </div>
+    <button type="submit">Submit Claim</button>
+</form>
+
+<h2>Track Claims</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Lecturer</th>
+            <th>Hours Worked</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.ClaimId</td>
+                <td>@claim.Lecturer</td>
+                <td>@claim.HoursWorked</td>
+                <td>@claim.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
