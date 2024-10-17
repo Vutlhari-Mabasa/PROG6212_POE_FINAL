@@ -26,10 +26,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\lab_services_student\source\repos\PROG6212_POE
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_POE/Views/AcademicManager/FinalApproval.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNhZGVtaWNNYW5hZ2VyXEZpbmFsQXBwcm92YWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/lab_services_student/source/repos/PROG6212_POE/Views/Lecturer/SubmitAndTrackClaim.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcU3VibWl0QW5kVHJhY2tDbGFpbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

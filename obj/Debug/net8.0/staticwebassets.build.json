@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3ByzIFllKmyaKhY/qVlzizdsISU0YNGZ8wyq8aEPa8c=",
+  "Hash": "bdTZonp0sQN/XSEOwrgO70uG/Gzgn2j2ThX+CzWHgXM=",
   "Source": "PROG6212_POE",
   "BasePath": "_content/PROG6212_POE",
   "Mode": "Default",
@@ -1231,6 +1231,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\lab_services_student\\source\\repos\\PROG6212_POE\\wwwroot\\uploads\\1_ADDB7311MM.pdf",
+      "SourceId": "PROG6212_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lab_services_student\\source\\repos\\PROG6212_POE\\wwwroot\\",
+      "BasePath": "_content/PROG6212_POE",
+      "RelativePath": "uploads/1_ADDB7311MM.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\1_ADDB7311MM.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\lab_services_student\\source\\repos\\PROG6212_POE\\wwwroot\\uploads\\2_ADDB7311MM.pdf",
+      "SourceId": "PROG6212_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lab_services_student\\source\\repos\\PROG6212_POE\\wwwroot\\",
+      "BasePath": "_content/PROG6212_POE",
+      "RelativePath": "uploads/2_ADDB7311MM.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\2_ADDB7311MM.pdf"
     }
   ]
 }
