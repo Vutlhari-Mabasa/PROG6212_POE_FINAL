@@ -5,7 +5,7 @@ using PROG6212_Part1.Models;
 
 namespace PROG6212_Part1.Controllers
 {
-    public class ProgrammeCoordinatorController : Controller
+    public class CoordinatorsAndManagersController : Controller
     {
         // Use the same static list of claims as LecturerController
         private static List<Claim> claims = LecturerController.claims;
