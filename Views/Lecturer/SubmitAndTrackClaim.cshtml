@@ -92,7 +92,8 @@
     </div>
     <div>
         <label>Upload Document:</label>
-        <input type="file" name="document" required />
+        <input type="file" name="document" accept=".pdf,.docx,.xlsx" required />
+        <small>Allowed file types: .pdf, .docx, .xlsx (max size 5MB)</small>
     </div>
     <button type="submit">Submit Claim</button>
 </form>
@@ -105,6 +106,7 @@
             <th>Lecturer</th>
             <th>Hours Worked</th>
             <th>Status</th>
+            <th>Document</th>
         </tr>
     </thead>
     <tbody>
@@ -115,7 +117,18 @@
                 <td>@claim.Lecturer</td>
                 <td>@claim.HoursWorked</td>
                 <td>@claim.Status</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(claim.DocumentPath))
+                    {
+                        <a href="@claim.DocumentPath" target="_blank">View Document</a>
+                    }
+                </td>
             </tr>
         }
     </tbody>
 </table>
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="error-message">@ViewBag.ErrorMessage</div>
+}

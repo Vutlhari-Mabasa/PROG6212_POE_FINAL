@@ -65,6 +65,7 @@
             <th>Lecturer</th>
             <th>Hours Worked</th>
             <th>Status</th>
+            <th>Document</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -76,6 +77,12 @@
                 <td>@claim.Lecturer</td>
                 <td>@claim.HoursWorked</td>
                 <td>@claim.Status</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(claim.DocumentPath))
+                    {
+                        <a href="@claim.DocumentPath" target="_blank">View Document</a>
+                    }
+                </td>
                 <td>
                     <form asp-action="ApproveClaim" method="post">
                         <input type="hidden" name="claimId" value="@claim.ClaimId" />
