@@ -1,13 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using PROG6212_Part1.Data
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<HRContext>(
-              options => options.UseSqlServer(builder.Configuration.GetConnectionString("Name")));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
