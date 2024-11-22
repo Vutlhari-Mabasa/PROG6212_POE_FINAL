@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lab_services_student\\source\\repos\\PROG6212_POE\\PROG6212_POE.csproj": {}
+    "C:\\Users\\RC_Student_lab\\source\\repos\\PROG6212_POE\\PROG6212_POE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lab_services_student\\source\\repos\\PROG6212_POE\\PROG6212_POE.csproj": {
+    "C:\\Users\\RC_Student_lab\\source\\repos\\PROG6212_POE\\PROG6212_POE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lab_services_student\\source\\repos\\PROG6212_POE\\PROG6212_POE.csproj",
+        "projectUniqueName": "C:\\Users\\RC_Student_lab\\source\\repos\\PROG6212_POE\\PROG6212_POE.csproj",
         "projectName": "PROG6212_POE",
-        "projectPath": "C:\\Users\\lab_services_student\\source\\repos\\PROG6212_POE\\PROG6212_POE.csproj",
-        "packagesPath": "C:\\Users\\lab_services_student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lab_services_student\\source\\repos\\PROG6212_POE\\obj\\",
+        "projectPath": "C:\\Users\\RC_Student_lab\\source\\repos\\PROG6212_POE\\PROG6212_POE.csproj",
+        "packagesPath": "C:\\Users\\RC_Student_lab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RC_Student_lab\\source\\repos\\PROG6212_POE\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lab_services_student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\RC_Student_lab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +54,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
